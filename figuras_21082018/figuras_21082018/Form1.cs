@@ -20,10 +20,25 @@ namespace figuras_21082018
            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        static void Changed(object sender, EventArgs e)
         {
-            
-           //bLista.SelectedItem
+            //ejemplo evento
+            CCirculo c = (CCirculo)sender;
+            MessageBox.Show("el valor cambio: " + c.Diametro.ToString());
+        }
+
+        static void Changed2(object sender, EventArgs e)
+        {
+            //ejemplo evento
+            CRectangulo c = (CRectangulo)sender;
+            MessageBox.Show("el valor cambio: " + c.Lado.ToString());
+        }
+
+        static void Changed3(object sender, EventArgs e)
+        {
+            //ejemplo evento
+            Triangulo c = (Triangulo)sender;
+            MessageBox.Show("el valor 1 cambio: " + c.Base.ToString() + "el valor 2 cambio:" + c.Altura.ToString());
         }
 
         private void cbLista_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,6 +90,7 @@ namespace figuras_21082018
                     case 0:
                         try
                         {
+                            cir.Changed += new EventHandler(Changed);
                             cir.Diametro = float.Parse(tbDato1.Text);
                         }
                         catch (FormatException ex)
@@ -88,7 +104,8 @@ namespace figuras_21082018
                         break;
                     case 1:
                         try
-                        { 
+                        {
+                            tri.Changed3 += new EventHandler(Changed3);
                         tri.Altura = float.Parse(tbDato1.Text);
                         tri.Base = float.Parse(tbDato2.Text);
                         }
@@ -101,15 +118,15 @@ namespace figuras_21082018
                         break;
                     case 2:
                         try
-                        {                           
-                        cuadrado.Lado = float.Parse(tbDato1.Text);
+                        {
+                            cuadrado.Changed2 += new EventHandler(Changed2);                  
+                            cuadrado.Lado = float.Parse(tbDato1.Text);
                         }
                         catch (FormatException ex)
                         {
                             MessageBox.Show(ex.ToString());
                         }
-                        MessageBox.Show("El Area es: " + Convert.ToString(cuadrado.CalcularArea()));
-                        
+                            MessageBox.Show("El Area es: " + Convert.ToString(cuadrado.CalcularArea())); 
                         break;
 
                 }
@@ -122,7 +139,8 @@ namespace figuras_21082018
                     case 0:
                         try
                         {
-                        cir.Diametro = float.Parse(tbDato1.Text);
+                            cir.Changed += new EventHandler(Changed);
+                            cir.Diametro = float.Parse(tbDato1.Text);
                         }
                         catch (FormatException ex)
                         {
@@ -133,9 +151,10 @@ namespace figuras_21082018
                         break;
                     case 1:
                         try
-                        { 
-                        tri.Altura = float.Parse(tbDato1.Text);
-                        tri.Base = float.Parse(tbDato2.Text);
+                        {
+                            tri.Changed3 += new EventHandler(Changed3);
+                            tri.Altura = float.Parse(tbDato1.Text);
+                            tri.Base = float.Parse(tbDato2.Text);
                         }
                         catch (FormatException ex)
                         {
@@ -145,8 +164,9 @@ namespace figuras_21082018
 
                         break;
                     case 2:
-                        try { 
-                        cuadrado.Lado = Convert.ToInt32(tbDato1);
+                        try {
+                            cuadrado.Changed2 += new EventHandler(Changed2);
+                            cuadrado.Lado = Convert.ToInt32(tbDato1);
                         }
                         catch (FormatException ex)
                         {

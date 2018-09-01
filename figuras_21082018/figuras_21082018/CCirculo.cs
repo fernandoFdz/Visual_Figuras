@@ -8,6 +8,8 @@ namespace figuras_21082018
 {
     class CCirculo: Figura
     {
+        public event EventHandler Changed;
+
         private float iDiametro;
 
         public float Diametro
@@ -19,6 +21,7 @@ namespace figuras_21082018
             set
             {
                 iDiametro = value;
+                Changed(this, EventArgs.Empty);
             }
         }
 

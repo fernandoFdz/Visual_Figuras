@@ -9,6 +9,7 @@ namespace figuras_21082018
     class Triangulo: Figura { 
         private float iAltura;
         private float iBase;
+        public event EventHandler Changed3;
 
         public float Altura
         {
@@ -19,6 +20,7 @@ namespace figuras_21082018
             set
             {
                 iAltura = value;
+                Changed3(this, EventArgs.Empty);
             }
         }
 
@@ -31,6 +33,7 @@ namespace figuras_21082018
             set
             {
                 iBase = value;
+                Changed3(this, EventArgs.Empty);
             }
         }
 

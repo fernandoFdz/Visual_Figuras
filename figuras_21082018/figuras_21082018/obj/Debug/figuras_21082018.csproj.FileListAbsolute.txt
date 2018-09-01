@@ -7,3 +7,12 @@ C:\Users\Fernando\Documents\Universidad\Programacion Visual\figuras_21082018\fig
 C:\Users\Fernando\Documents\Universidad\Programacion Visual\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.csproj.GenerateResource.Cache
 C:\Users\Fernando\Documents\Universidad\Programacion Visual\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.exe
 C:\Users\Fernando\Documents\Universidad\Programacion Visual\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.pdb
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\bin\Debug\figuras_21082018.exe.config
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.exe
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.pdb
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\bin\Debug\figuras_21082018.exe
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\bin\Debug\figuras_21082018.pdb
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.Form1.resources
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.Properties.Resources.resources
+C:\Users\Fernando\Documents\GitHub\Visual_Figuras\figuras_21082018\figuras_21082018\obj\Debug\figuras_21082018.csproj.GenerateResource.Cache

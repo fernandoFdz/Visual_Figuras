@@ -8,6 +8,7 @@ namespace figuras_21082018
 {
     class CRectangulo : Figura { 
     private float iAltura;
+        public event EventHandler Changed2;
 
         public float Lado
         {
@@ -18,6 +19,7 @@ namespace figuras_21082018
             set
             {
                 iAltura = value;
+                Changed2(this, EventArgs.Empty);
             }
         }
 
